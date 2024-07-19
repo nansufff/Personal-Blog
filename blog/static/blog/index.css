@@ -17,29 +17,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header Styles */
-#main-navigation {
-    background: #fff;
-    padding: 15px 20px;
-    border-bottom: 2px solid #ff6f61;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
-#main-navigation h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #ff6f61;
-}
-
-#main-navigation nav {
-    margin-top: 10px;
-}
-
-#main-navigation nav a {
-    margin-right: 20px;
-    font-size: 1.1em;
-    color: #ff6f61;
-}
 
 /* Welcome Section */
 #welcome {
@@ -88,40 +66,7 @@ a:hover {
     color: #ff6f61;
 }
 
-#latest-post .post {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 25px;
-    border-bottom: 2px solid #f1f1f1;
-    padding-bottom: 20px;
-}
 
-#latest-post .post img {
-    max-width: 150px;
-    margin-right: 20px;
-    border-radius: 8px;
-    border: 3px solid #ff6f61;
-    transition: transform 0.3s ease-in-out;
-}
-
-#latest-post .post img:hover {
-    transform: scale(1.05);
-}
-
-#latest-post .post__content {
-    flex: 1;
-}
-
-#latest-post .post h3 {
-    margin: 0;
-    color: #ff6f61;
-    font-size: 1.5em;
-}
-
-#latest-post .post p {
-    margin: 10px 0;
-    color: #555;
-}
 
 /* About Section */
 #about {
