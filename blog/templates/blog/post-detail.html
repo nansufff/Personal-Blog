@@ -1,0 +1,35 @@
+{%extends "base.html"%}
+{%load static%}
+
+{% block title %}
+Post Title
+{% endblock %}
+
+{%block css_files%}
+<link rel="stylesheet" href="{% static "blog/post-detail.css"%}">
+
+
+{% endblock %}
+
+{% block content%}
+<section id="summary">
+    <h2>post title</h2>
+    <article>
+        <img src="" alt="post title">
+        <address>By Nandhana</address>
+        <div>
+            Last updated on <time>July 19th</time>
+        </div>
+    </article>
+</section>
+<main>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aliquid distinctio officia repudiandae eum voluptatum nulla, nesciunt dignissimos esse culpa perspiciatis voluptates animi quia natus corporis saepe tenetur maiores accusantium!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aliquid distinctio officia repudiandae eum voluptatum nulla, nesciunt dignissimos esse culpa perspiciatis voluptates animi quia natus corporis saepe tenetur maiores accusantium!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aliquid distinctio officia repudiandae eum voluptatum nulla, nesciunt dignissimos esse culpa perspiciatis voluptates animi quia natus corporis saepe tenetur maiores accusantium!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aliquid distinctio officia repudiandae eum voluptatum nulla, nesciunt dignissimos esse culpa perspiciatis voluptates animi quia natus corporis saepe tenetur maiores accusantium!</p>
+
+
+
+</main>
+
+{% endblock %}

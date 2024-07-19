@@ -1,11 +1,10 @@
 {% load static%}
 <li>
     <article class="post">
-        <a href="{%url "details" "mary-kom"%}" >
-            <img src="{% static "blog/images/marykom.jpeg" %}" alt="Mary Kom">
+        <a href="{%url "details" post.slug%}" >
+            <img src="{% static "blog/images/"|add:post.image %}" alt="{{post.title}}">
             <div class="post__content">
-                <h3>MARY KOM : The Living Legend</h3>
-                <p>The other day, while helping my sister with her English homework,
-                     I came across the topic of Mary Kom, a figure I've always admired. I first learned about her when I started karate classes in the 11th grade. Inspired by her story, I feel that my first blog should be dedicated to the truly motivating Mary Kom.</p>
+                <h3>{{post.title}}</h3>
+                <p>{{post.excerpt}}</p>
             </div>
 </li>
