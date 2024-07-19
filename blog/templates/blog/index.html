@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+MY BLOG
+{% endblock %}
+
+{%block css_files%}
+<link rel="stylesheet" href="{% static "blog/index.css"%}">
+
+
+{% endblock %}
+
+{% block content%}
+<header id="main-navigation">
+    <h1><a href="">Discover, Share, Inspire</h1>
+        <nav>
+            <a href="">All Posts</a>
+        </nav>
+</header>
+<section id="welcome">
+    <header>
+        <img class="my_pic" src="{% static "blog/images/nandhu.png" %}" alt="Nandhana-The Author Of This Blog">
+        <h2>"Inspire And Be Inspired"</h2>
+    </header>
+        <p>Hi, I am Nandhana and I love to blog about anything that inspires me or makes me happy!!</p>
+
+</section>
+<section id="latest-post">
+    <h2>My Latest Thoughts </h2>
+    <ul>
+        <li>
+            <article class="post">
+                <a href="" >
+                    <img src="{% static "blog/images/marykom.jpeg" %}" alt="Mary Kom">
+                    <div class="post__content">
+                        <h3>MARY KOM</h3>
+                        <p>The other day, while helping my sister with her English homework,
+                             I came across the topic of Mary Kom, a figure I've always admired. I first learned about her when I started karate classes in the 11th grade. Inspired by her story, I feel that my first blog should be dedicated to the truly motivating Mary Kom.</p>
+                    </div>
+        </li>
+    </ul>
+</section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi there! I'm a 4th year Computer Science B.Tech student with a passion for programming. Beyond coding, I have a keen interest in sports and love spending time in the kitchen experimenting with new recipes. Welcome to my blog!</p>
+    <p>My goal is to inspire my readers through my blogs while continuing to grow as a software developer.</p>
+    {% endblock %}
