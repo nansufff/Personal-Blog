@@ -2,14 +2,14 @@
 #main-navigation {
     background: #ffffff;
     padding: 15px 20px;
-    border-bottom: 2px solid #e87267;
+    border-bottom: 2px solid #ffcccb; /* Baby Pink */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #main-navigation h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #ff6f61;
+    color: #f8c471; /* Yellow */
 }
 
 #main-navigation nav {
@@ -19,5 +19,10 @@
 #main-navigation nav a {
     margin-right: 20px;
     font-size: 1.1em;
-    color: #ff6f61;
+    color: #add8e6; /* Baby Blue */
+}
+
+/* Optional: Add hover effects for better user interaction */
+#main-navigation nav a:hover {
+    color: #f8c471; /* Yellow on hover */
 }
