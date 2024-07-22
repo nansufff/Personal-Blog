@@ -2,6 +2,22 @@ from django.db import models
 from django.core.validators import MinLengthValidator
 
 # Create your models here.
+class tag(models.Model):
+    caption=models.CharField(max_length=20)
+    
+
+    class Meta:
+        verbose_name = _("")
+        verbose_name_plural = _("s")
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse("_detail", kwargs={"pk": self.pk})
+)
+
+
 class author(models.Model):
     fname=models.CharField(max_length=20)
     lname=models.CharField(max_length=20)
@@ -15,4 +31,5 @@ class blogpost(models.Model):
     date=models.DateField(auto_now=True)
     slug=models.SlugField(unique=True)
     content=models.TextField(validators=[MinLengthValidator(10)])
-
+    author=models.ForeignKey(author,on_delete=models.SET_NULL,related_name="posts")
+    tags=models.ManyToManyField(tag)
